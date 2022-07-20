@@ -1,0 +1,561 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+/* -----------------------------------------------------------------------
+----------------------------Main Header ------------------------------------ */
+.main-body{
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 80px 0px 80px;
+}
+.main-two{
+    width: 100%;
+}       
+header{
+    width: 100%;
+    background-color: #161616;
+    border-radius: 30px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container{
+    display: flex;
+}
+.header-info{
+    width: 50%;
+}
+.header-image{
+    width: 50%;
+}   
+/*---------------------------------------------------------------------
+------------- top text and paragraph------------------------------------ */
+.container .header-info .section-title{
+    font-size: 55px;
+    color: #FFFF;
+    font-weight: 700;
+    max-width: 500px;
+    margin-top: 110px;
+    opacity: 0;
+}
+.container .header-info .section-detail{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFF;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.slid-left{
+    animation: slidleft 1s linear forwards;
+}
+@keyframes slidleft{
+    0%{
+        transform: translate(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+p.slid-left{
+    animation-delay: 1s;
+}
+.btn-1.slid-left{
+    animation-delay: 2s;
+}
+/*------------------------------------------------------------------------
+----------- top player image -------------------------------------------- */
+.header-image img{
+    width: 540px;
+    height: 540px;
+    margin-top: 80px;
+    margin-right: 20px;
+}
+/* --------------------------------------------------------------------------
+------------Top section button---------------------------------------  */
+.btn-1{
+    background-color: #DD0000;
+    color: #FFFF;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 110px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+}
+.btn-1:hover{
+    background-color: red;
+}
+/*----------------------------------------------------------------------------
+--------------------- Section Two Upcoming matches --------------------------- */
+
+/*-------------------- match card start----------------------------------- */
+.section-two .sec-two-container .grid-item .match-card{
+    width: 290px;
+    height: 242px;
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+    margin: 0%;
+    padding: 0%;
+}
+.match-card .card-iamge{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.match-card .card-text h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.match-card .card-iamge .vs{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.match-card .card-text .date{
+    margin-top: 10px;
+}
+.match-card .card-text{
+    text-align: center;
+}
+.match-card .card-text{
+    padding: 20px;
+}
+.match-card .card-text button{
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+    border-radius: 5px;
+    border: 1px solid #161616;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.match-card .card-text button:hover{
+    color: #FFFF;
+    background-color: #313131;
+}
+.match-card .card-text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+    margin-bottom: 10px;
+}
+.match-card .card-text span, .match-card .card-text span i{
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.match-card .card-text .span1{
+    margin-right: 30px;
+}
+.match-card .card-text .span2:hover{
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------- */
+/* -------------------------section two flex  -------------------------------*/
+.sec-two-container{
+    display: flex;
+    justify-content: space-between;
+}
+/*----------------------------------------------------------------------- */
+/* -------------------------section two flex item-----------------------------*/
+/*----------------- main card --------------- */
+.sec-two-container .flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    height: 300px;
+    background-color:  #161616;
+    border-radius: 10px;
+}
+/* ----------------card content ------------------------------------------ */
+.sec-two-container .flex-item .upcoming-match-card{
+    width: 200px;
+    height: 50px;
+    background-color: #FFFF;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.sec-two-container .flex-item .item-3, .item-2, .item-1{
+    border: none;
+}
+.btn-2 a{
+    text-decoration: none;
+    color: #161616;
+}
+.btn-2 .link-3{
+    color: #FFFF;
+}
+.sec-two-container .flex-item .item-3{
+    background-color: #d00;
+    color: #FFFF;
+}
+.sec-two-container .flex-item .item-1{
+    margin-top: 30px;
+}
+/* -------------------------------------------------------------------
+-------------------section two grid items --------------------------------*/
+.section-two .sec-two-container .grid-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+}
+.sec-two-container{
+    margin-bottom: 40px;
+}
+/* Button for tablet or mobile device */
+section .for-tablet{
+    display: none;
+}
+/*----------------------------------------------------------------------------
+---------------------------- Footer------------------------------------------ */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: #161616;
+}
+.goal{
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFF;
+    margin-top: 50px;
+}
+hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #313131;
+}
+.footer-links a{
+    color: #B9B9B9;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-links a:hover{
+    color: #FFFF;
+}
+.social-icon{
+    font-size: 30px;
+    color: #B9B9B9;
+}
+.social-icon i{
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social-icon i:hover{
+    color: #FFFF;
+}
+/*-----------------------------------------------------------------------------
+---------------------- media querie for mobile  ----------------------------*/
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .main-body{
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 20px 0px 20px;
+    }
+    .main-two{
+        width: 100%;
+        height: 472px;
+    }       
+    header{
+        width: 100%;
+        height: 472px;
+        background-color: #161616;
+        border-radius: 20px;
+        /* margin-bottom: 120px; */
+        display: flex;
+        flex-direction: column;
+    }
+    header .container{
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-weight: 700;
+        width: 200px;
+    }
+    .header-image{
+        margin: -80px;
+        margin-right: 20px;
+        width: 50%;
+        height: 245px;
+    }
+    .container .header-info .section-title{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .container .header-info .section-detail{
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .container .header-info .section-detail .head-p-text{
+        display: none;
+    }
+    .btn-1{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .header-image img{
+        width: 233px;
+        height: 245px;
+    }
+    /* section two  */
+    .sec-two-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-two-container .flex-item{
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .flex-item .item-1, .item-2{
+        border: 2px solid #313131;
+    }
+
+    .section-two .sec-two-container .grid-item{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 24px;
+    }
+    .sec-two-container .flex-item .upcoming-match-card{
+        width: 200px;
+        height: 50px;
+        background-color: #FFFF;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #161616;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    .btn-2 a{
+        text-decoration: none;
+        color: #161616;
+    }
+    .btn-2 .link-3{
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1 {
+        background-color: #d00;
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1{
+        background-color: #d00;
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1{
+        margin-top: 30px;
+    }
+/*--------------------------------------------------- --------footer--------------------------------------------  */
+footer{
+    height: 450px;
+}
+.goal{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFF;
+    margin-top: 50px;
+}
+
+.footer-links a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.social-icon{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    color: #B9B9B9;
+}
+}
+/*-----------------------------------------------------------------------------
+---------------------- media querie for tablet  ----------------------------*/
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    .main-body{
+        width: 100%;
+        padding: 30px 30px 0px 30px;
+    }
+    header{
+        width: 100%;
+        height: 398px;
+        background-color: #161616;
+        border-radius: 30px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .header-image img{
+        width: 323px;
+        max-height: 340px;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+    .container .header-info .section-title{
+        font-size: 30px;
+        color: #FFFF;
+        font-weight: 700;
+        max-width: 250px;
+        margin-top: 110px;
+        opacity: 0;
+    }
+    .container .header-info .section-detail{
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFF;
+        max-width: 250px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        opacity: 0;
+    }
+    .header-info{
+        width: 50%;
+    }
+    .header-image{
+        width: 50%;
+    }   
+    .head-p-text{
+        display: none;
+    }
+    section .for-tablet{
+        background-color: #d00;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #FFFF;
+        margin-top: 10px;
+        margin-left: 300px;
+        cursor: pointer;
+        margin-bottom: 40px;
+        display: block;
+    }
+    /* grid items  */
+    .section-two .sec-two-container .grid-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+    /* flex items  */
+    .sec-two-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .for-hide{
+        display: none;
+    }
+   .section-two .sec-two-container .flex-item{
+    width: 80%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+    }
+    
+    .sec-two-container .flex-item .item-3{
+        background-color: #DD0000;
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1, .item-2{
+        border: 2px solid #313131;
+    }
+    .sec-two-container .flex-item .item-2{
+        border: 2px solid #313131;
+    }
+    .sec-two-container .flex-item .upcoming-match-card{
+        width: 180px;
+        height: 50px;
+        background-color: #FFFF;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #161616;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    .sec-two-container .flex-item .item-3, .item-2, .item-1{
+        border: none;
+    }
+    .btn-2 a{
+        text-decoration: none;
+        color: #161616;
+    }
+    .btn-2 .link-3{
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-3{
+        background-color: white;
+        border: 1px solid #161616;
+        color: #161616;
+    }
+    .sec-two-container .flex-item .item-3 a{
+        color: #161616;
+    }
+    .sec-two-container .flex-item .item-1{
+        margin-top: 0px;
+    }
+    .sec-two-container .flex-item .item-1{
+        background-color: #d00;
+        color: #FFFF;
+    }
+    .sec-two-container .flex-item .item-1 a{
+        color: #FFFF;
+    }
+    /* footer  */
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 20px;
+    }
+}
